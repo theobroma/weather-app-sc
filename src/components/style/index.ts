@@ -3,6 +3,7 @@ import { combine } from 'flexible-chain';
 import { textStyles } from './text';
 import { CSSProperties } from 'react';
 import styled from 'styled-components';
+import { StyleSize } from './style.size';
 
 export const noop = (..._: any[]): any => {};
 
@@ -14,6 +15,7 @@ const getStyle =
   });
 
 const styles = {
+  ...StyleSize,
   ...textStyles,
 };
 
