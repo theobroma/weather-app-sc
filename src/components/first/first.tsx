@@ -1,4 +1,4 @@
-import { Description, SubTitle, Title } from './first.styles';
+import { Description, PrimaryBlock, SecondaryBlock, SubTitle, Title } from './first.styles';
 
 export const FirstComponent = () => (
   <div>
@@ -10,5 +10,7 @@ export const FirstComponent = () => (
         aperiam in ducimus aspernatur optio dolorem earum eligendi cupiditate reiciendis modi sit! Beatae, numquam.
       </Description>
     </span>
+    <PrimaryBlock />
+    <SecondaryBlock />
   </div>
 );

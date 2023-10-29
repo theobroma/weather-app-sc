@@ -4,6 +4,7 @@ import { textStyles } from './text';
 import { CSSProperties } from 'react';
 import styled from 'styled-components';
 import { StyleSize } from './style.size';
+import { StyleColors } from './style.colors';
 
 export const noop = (..._: any[]): any => {};
 
@@ -15,6 +16,7 @@ const getStyle =
   });
 
 const styles = {
+  ...StyleColors,
   ...StyleSize,
   ...textStyles,
 };
