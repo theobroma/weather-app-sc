@@ -5,6 +5,7 @@ import { CSSProperties } from 'react';
 import styled from 'styled-components';
 import { StyleSize } from './style.size';
 import { StyleColors } from './style.colors';
+import { StyleGrid } from './style.grid';
 
 export const noop = (..._: any[]): any => {};
 
@@ -18,6 +19,7 @@ const getStyle =
 const styles = {
   ...StyleColors,
   ...StyleSize,
+  ...StyleGrid,
   ...textStyles,
 };
 
