@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { StyleSize } from './style.size';
 import { StyleColors } from './style.colors';
 import { StyleGrid } from './style.grid';
+import { StyleBorder } from './style.border';
 
 export const noop = (..._: any[]): any => {};
 
@@ -17,9 +18,10 @@ const getStyle =
   });
 
 const styles = {
+  ...StyleBorder,
   ...StyleColors,
-  ...StyleSize,
   ...StyleGrid,
+  ...StyleSize,
   ...textStyles,
 };
 
