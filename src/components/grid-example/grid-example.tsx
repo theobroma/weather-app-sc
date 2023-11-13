@@ -1,8 +1,7 @@
-import { ForecastDay } from '../forecast-day/forecast-day';
 import { FormRow } from '../form/common.styles';
-import { Description, PrimaryBlock, SecondaryBlock, SubTitle, Title } from './first.styles';
+import { Title, SubTitle, Description, PrimaryBlock, SecondaryBlock } from './grid-example.styles';
 
-export const FirstComponent = () => (
+export const GridExample = () => (
   <div>
     <span>
       <Title>Title</Title>
@@ -12,11 +11,6 @@ export const FirstComponent = () => (
         aperiam in ducimus aspernatur optio dolorem earum eligendi cupiditate reiciendis modi sit! Beatae, numquam.
       </Description>
     </span>
-    <FormRow sizes={3}>
-      <ForecastDay />
-      <ForecastDay />
-      <ForecastDay />
-    </FormRow>
     <FormRow sizes={[1, 2]}>
       <PrimaryBlock />
       <SecondaryBlock />
