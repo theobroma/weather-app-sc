@@ -9,27 +9,28 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:profile": "TIMING=1 eslint ./src --ext ts,tsx",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,yml,json,css,scss,md}",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tsc": "bash -c tsc"
   },
   "dependencies": {
     "flexible-chain": "^0.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.11.0",
+    "react-icons": "^4.12.0",
     "styled-components": "^6.1.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "@vitejs/plugin-react": "^4.1.1",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "@vitejs/plugin-react": "^4.2.0",
     "csstype": "^3.1.2",
-    "eslint": "^8.53.0",
+    "eslint": "^8.54.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2",
     "vite": "^4.5.0"
   },
   "engines": {
