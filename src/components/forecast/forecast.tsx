@@ -7,7 +7,7 @@ import { QueryEnum } from '../../enums/query.enum';
 
 export const Forecast = () => {
   const { data } = useQuery({
-    queryKey: [QueryEnum.loadForecast],
+    queryKey: [QueryEnum.LoadForecast],
     queryFn: () => loadForecast(),
   });
 
