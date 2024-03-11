@@ -6,6 +6,7 @@ import { Layout } from './layout';
 const MIN_LAZY_DELAY = 300;
 
 const HomePage = lazy(() => pMinDelay(import('./home/home.page'), MIN_LAZY_DELAY));
+const StarterIntroPage = lazy(() => pMinDelay(import('./starter-intro/starter-intro.page'), MIN_LAZY_DELAY));
 
 export const router = createBrowserRouter([
   {
@@ -17,12 +18,8 @@ export const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/create',
-        element: <>create</>,
-      },
-      {
-        path: '/:id',
-        element: <>edit</>,
+        path: '/starter',
+        element: <StarterIntroPage />,
       },
     ],
   },
