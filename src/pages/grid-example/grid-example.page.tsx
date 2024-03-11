@@ -1,7 +1,7 @@
-import { FormRow } from '../form/common.styles';
+import { FormRow } from '../../components/form/common.styles';
 import { Title, SubTitle, Description, PrimaryBlock, SecondaryBlock } from './grid-example.styles';
 
-export const GridExample = () => (
+const GridExamplePage = () => (
   <div>
     <span>
       <Title>Title</Title>
@@ -26,3 +26,5 @@ export const GridExample = () => (
     </FormRow>
   </div>
 );
+
+export default GridExamplePage;

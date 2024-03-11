@@ -11,13 +11,14 @@ export const Layout = () => {
         <NavLink className={isActiveLink} to="/">
           Home 🏠
         </NavLink>
-        <NavLink className={isActiveLink} to="/create">
-          Create ✍️
+        <NavLink className={isActiveLink} to="/grid">
+          Grid||
+        </NavLink>
+        <NavLink className={isActiveLink} to="/starter">
+          Starter||
         </NavLink>
       </nav>
-
       <hr className="divider" />
-
       <div className="container">
         <Outlet />
       </div>

@@ -1,5 +1,5 @@
 import { ColorEnum } from '../../enums/color.enum';
-import { Style } from '../style';
+import { Style } from '../../components/style';
 
 export const Title = Style.Secondary.Bold.Div;
 export const SubTitle = Style.Primary.PaddingTop(60).Div;
