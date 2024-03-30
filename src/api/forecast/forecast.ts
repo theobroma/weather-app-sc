@@ -1,4 +1,4 @@
-import { connectionClient } from '../connection';
+import { connectionClient } from '@api/connection';
 
 const lat = 0;
 const lon = 0;
