@@ -1,4 +1,4 @@
-import { FormRow } from '../../components/form/common.styles';
+import { FormRow } from '@components/form/common.styles';
 import { Title, SubTitle, Description, PrimaryBlock, SecondaryBlock } from './grid-example.styles';
 
 const GridExamplePage = () => (

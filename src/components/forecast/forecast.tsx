@@ -1,9 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 
-import { loadForecast } from '../../api/forecast/forecast';
-import { FormRow } from '../form/common.styles';
+import { loadForecast } from '@api/forecast/forecast';
+import { FormRow } from '@components/form/common.styles';
+import { QueryEnum } from '@enums/query.enum';
+
 import { ForecastDay } from './forecast-day/forecast-day';
-import { QueryEnum } from '../../enums/query.enum';
 
 export const Forecast = () => {
   const { data } = useQuery({

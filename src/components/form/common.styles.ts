@@ -1,4 +1,4 @@
-import { Style } from '../style';
+import { Style } from '@components/style';
 
 interface FormRowProps {
   sizes?: number | number[];

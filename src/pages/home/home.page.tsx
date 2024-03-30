@@ -1,13 +1,11 @@
-import { Forecast } from '../../components/forecast/forecast';
-import { CurrentWeather } from '../../components/current-weather/current-weather';
+import { CurrentWeather } from '@components/current-weather/current-weather';
+import { Forecast } from '@components/forecast/forecast';
 
-const HomePage = () => {
-  return (
-    <>
-      <CurrentWeather />
-      <Forecast />
-    </>
-  );
-};
+const HomePage = () => (
+  <>
+    <CurrentWeather />
+    <Forecast />
+  </>
+);
 
 export default HomePage;
