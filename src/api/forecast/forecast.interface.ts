@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const LocationSchema = z.object({
+export const locationSchema = z.object({
   name: z.string(),
   region: z.string(),
   country: z.string(),
@@ -11,4 +11,13 @@ export const LocationSchema = z.object({
   localtime: z.string(),
 });
 
-export type LocationType = z.infer<typeof LocationSchema>;
+export type LocationType = z.infer<typeof locationSchema>;
+
+export const forecastResponseSchema = z.object({
+  // current: CurrentWeatherSchema,
+  // forecast: z.object({
+  //   forecastday: z.array(ForecastDaySchema),
+  // }),
+
+  location: locationSchema,
+});
