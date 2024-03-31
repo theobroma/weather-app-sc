@@ -4,24 +4,22 @@ type LinkActive = { isActive: boolean };
 
 const isActiveLink = ({ isActive }: LinkActive) => `link ${isActive ? 'active' : ''}`;
 
-export const Layout = () => {
-  return (
-    <>
-      <nav>
-        <NavLink className={isActiveLink} to="/">
-          Home 🏠
-        </NavLink>
-        <NavLink className={isActiveLink} to="/grid">
-          Grid||
-        </NavLink>
-        <NavLink className={isActiveLink} to="/starter">
-          Starter||
-        </NavLink>
-      </nav>
-      <hr className="divider" />
-      <div className="container">
-        <Outlet />
-      </div>
-    </>
-  );
-};
+export const Layout = () => (
+  <>
+    <nav>
+      <NavLink className={isActiveLink} to="/">
+        Home 🏠
+      </NavLink>
+      <NavLink className={isActiveLink} to="/grid">
+        Grid||
+      </NavLink>
+      <NavLink className={isActiveLink} to="/starter">
+        Starter||
+      </NavLink>
+    </nav>
+    <hr className="divider" />
+    <div className="container">
+      <Outlet />
+    </div>
+  </>
+);
