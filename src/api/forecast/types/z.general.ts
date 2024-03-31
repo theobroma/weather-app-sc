@@ -14,7 +14,7 @@ export const astroSchema = z.object({
   moonrise: z.string(),
   moonset: z.string(),
   moonPhase: z.string(),
-  moonIllumination: z.string(),
+  moonIllumination: z.number(),
   isMoonUp: z.number(),
   isSunUp: z.number(),
 });
