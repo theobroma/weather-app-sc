@@ -13,13 +13,10 @@ export const Forecast = () => {
   });
 
   console.log('🚀 ~ Forecast ~ error:', error);
-  console.log('🚀 ~ Forecast ~ data:', data);
 
   return (
     <FormRow sizes={3}>
-      <ForecastDay />
-      <ForecastDay />
-      <ForecastDay />
+      {data?.forecast.forecastday.map((forecastDay, index) => <ForecastDay key={index} forecastDay={forecastDay} />)}
     </FormRow>
   );
 };
