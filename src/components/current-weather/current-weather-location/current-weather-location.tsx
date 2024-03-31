@@ -1,4 +1,4 @@
-import { LocationType } from '@api/forecast/forecast.interface';
+import { LocationType } from '@api/forecast/types/z.location';
 
 interface CurrentWeatherLocationProps {
   location: LocationType;
