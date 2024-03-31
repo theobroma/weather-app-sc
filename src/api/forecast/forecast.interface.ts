@@ -1,23 +1,11 @@
 import { z } from 'zod';
 
-export const locationSchema = z.object({
-  name: z.string(),
-  region: z.string(),
-  country: z.string(),
-  lat: z.number(),
-  lon: z.number(),
-  tzId: z.string(),
-  localtimeEpoch: z.number(),
-  localtime: z.string(),
-});
-
-export type LocationType = z.infer<typeof locationSchema>;
+import { locationSchema } from './types/z.location';
+import { forecastSchema } from './types/z.forecast';
+import { currentWeatherSchema } from './types/z.current';
 
 export const forecastResponseSchema = z.object({
-  // current: CurrentWeatherSchema,
-  // forecast: z.object({
-  //   forecastday: z.array(ForecastDaySchema),
-  // }),
-
+  current: currentWeatherSchema,
+  forecast: forecastSchema,
   location: locationSchema,
 });
