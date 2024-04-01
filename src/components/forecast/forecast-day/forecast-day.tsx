@@ -1,5 +1,5 @@
 import { ForecastDayType } from '@api/forecast/types/z.forecast';
-import { Day } from './forecast-day.styles';
+import { Day, ForecastDayWrapper } from './forecast-day.styles';
 
 const weekdayOptions = { weekday: 'long' } as const;
 const dateOptions = {
@@ -20,12 +20,12 @@ export const ForecastDay = ({ forecastDay }: ForecastDayProps) => {
   const dateString = adaptedDate.toLocaleString('en-US', dateOptions);
 
   return (
-    <div>
+    <ForecastDayWrapper>
       <Day>{weekDayString}</Day>
       <span>{dateString}</span>
       <span>{astro.sunrise}</span>
       <span>{astro.sunset}</span>
       <img src={day.condition.icon} alt="icon" />
-    </div>
+    </ForecastDayWrapper>
   );
 };

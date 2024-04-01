@@ -7,6 +7,7 @@ import { StyleSize } from './style.size';
 import { StyleColors } from './style.colors';
 import { StyleGrid } from './style.grid';
 import { StyleBorder } from './style.border';
+import { flexStyles } from './flex';
 
 export const noop = (..._: any[]): any => {};
 
@@ -23,6 +24,7 @@ const styles = {
   ...StyleGrid,
   ...StyleSize,
   ...textStyles,
+  ...flexStyles,
 };
 
 const textTags = {
