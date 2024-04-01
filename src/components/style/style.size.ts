@@ -1,71 +1,58 @@
+import { getSize, getUnitSize } from './style.util';
+
 export const StyleSize = {
+  Width: (width: string | number) => ({
+    width: getSize(width),
+  }),
+  MinWidth: (minWidth: string | number) => ({
+    minWidth: getSize(minWidth),
+  }),
+  Height: (height: string | number) => ({
+    height: getSize(height),
+  }),
+  MinHeight: (minHeight: string | number) => ({
+    minHeight: getSize(minHeight),
+  }),
+  MaxHeight: (maxHeight: string | number) => ({
+    maxHeight: getSize(maxHeight),
+  }),
   FullWidth: {
     width: '100%',
   },
-  MinContentWidth: {
-    width: 'min-content',
-  },
-  MaxContentWidth: {
-    width: 'max-content',
-  },
-  PercentageWidth: (width: number) => ({
-    width: `${width}%`,
-  }),
-  Width: (width: number) => ({
-    width: width,
-  }),
-  MinWidth: (minWidth: number) => ({
-    minWidth: minWidth,
-  }),
-  MaxWidth: (maxWidth: number) => ({
-    maxWidth: maxWidth,
-  }),
   FullHeight: {
     height: '100%',
   },
-  ContentHeight: {
-    height: 'max-content',
-  },
-  Height: (height: number) => ({
-    height: height,
-  }),
-  MinHeight: (minHeight: number) => ({
-    minHeight: minHeight,
-  }),
-  MaxHeight: (maxHeight: number) => ({
-    maxHeight: maxHeight,
-  }),
   Padding: (...sizes: number[]) => ({
-    padding: sizes.join(' '),
+    padding: sizes.map((size) => getUnitSize(size)).join(' '),
   }),
   PaddingTop: (size: number) => ({
-    paddingTop: size,
+    paddingTop: getUnitSize(size),
   }),
   PaddingBottom: (size: number) => ({
-    paddingBottom: size,
+    paddingBottom: getUnitSize(size),
   }),
   PaddingLeft: (size: number) => ({
-    paddingLeft: size,
+    paddingLeft: getUnitSize(size),
   }),
   PaddingRight: (size: number) => ({
-    paddingRight: size,
+    paddingRight: getUnitSize(size),
   }),
   Margin: (...sizes: number[]) => ({
-    margin: sizes.join(' '),
+    margin: sizes.map((size) => getUnitSize(size)).join(' '),
   }),
   MarginHorizontalAuto: {
     margin: '0 auto',
   },
   MarginTop: (size: number) => ({
-    marginTop: size,
+    marginTop: getUnitSize(size),
   }),
   MarginRight: (size: number) => ({
-    marginRight: size,
+    marginRight: getUnitSize(size),
   }),
   MarginBottom: (size: number) => ({
-    marginBottom: size,
+    marginBottom: getUnitSize(size),
   }),
   MarginLeft: (size: number) => ({
-    marginLeft: size,
+    marginLeft: getUnitSize(size),
   }),
 };
