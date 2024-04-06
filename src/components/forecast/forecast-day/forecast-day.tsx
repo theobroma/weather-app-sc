@@ -1,4 +1,5 @@
 import { ForecastDayType } from '@api/forecast/types/z.forecast';
+
 import { Day, ForecastDayWrapper } from './forecast-day.styles';
 
 const weekdayOptions = { weekday: 'long' } as const;
