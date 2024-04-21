@@ -5,6 +5,7 @@ import { QueryEnum } from '@enums/query.enum';
 
 import { CurrentWeatherLocation } from './current-weather-location/current-weather-location';
 import { isExist } from '@utils/is-data.util';
+import { CurrentWeatherTemperature } from './current-weather-temperature/current-weather-temperature';
 
 export const CurrentWeather = () => {
   const { data, isPending } = useQuery({
@@ -16,5 +17,15 @@ export const CurrentWeather = () => {
     return <>Loading...</>;
   }
 
-  return <>{isExist(data) && <CurrentWeatherLocation location={data.location} />}</>;
+  return (
+    <>
+      {isExist(data) && (
+        <>
+          <CurrentWeatherLocation location={data.location} />
+          <br />
+          <CurrentWeatherTemperature current={data.current} />
+        </>
+      )}
+    </>
+  );
 };
