@@ -16,6 +16,9 @@ export const Layout = () => (
       <NavLink className={isActiveLink} to="/starter">
         Starter||
       </NavLink>
+      <NavLink className={isActiveLink} to="/dashboard">
+        Dashboard||
+      </NavLink>
     </nav>
     <hr className="divider" />
     <div className="container">
