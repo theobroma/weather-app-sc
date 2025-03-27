@@ -1,16 +1,23 @@
 const fontFamily = { fontFamily: 'Roboto' };
+const letterSpacing = { letterSpacing: '0.02em' };
 
 export const textTypography = {
   Body1: {
     ...fontFamily,
+    ...letterSpacing,
     fontSize: 16,
     lineHeight: 1.5,
-    letterSpacing: '0.00938em',
   },
   Body2: {
     ...fontFamily,
+    ...letterSpacing,
     fontSize: 14,
     lineHeight: 1.5,
-    letterSpacing: '0.00938em',
+  },
+  LabelFont: {
+    ...fontFamily,
+    ...letterSpacing,
+    fontSize: 14,
+    lineHeight: 1.16,
   },
 };

@@ -18,6 +18,12 @@ export enum ColorEnum {
   WarningMain = '#ed6c02',
   WarningDark = '#e65100',
 
+  Primary500 = '#7D50E1',
+  Primary300 = '#A47BF5',
+
+  Grey500 = '#747F96',
+  Grey300 = '#9EA5B8',
+
   White = '#ffffff',
   Black = '#000000',
   Transparent = 'transparent',
