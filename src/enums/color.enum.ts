@@ -21,6 +21,7 @@ export enum ColorEnum {
   Primary500 = '#7D50E1',
   Primary300 = '#A47BF5',
 
+  Grey200 = '#BABFCD',
   Grey500 = '#747F96',
   Grey300 = '#9EA5B8',
 

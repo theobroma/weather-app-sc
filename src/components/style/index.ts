@@ -7,6 +7,7 @@ import { StyleSize } from './style.size';
 import { StyleColors } from './style.colors';
 import { StyleGrid } from './style.grid';
 import { StyleBorder } from './style.border';
+import { StyleOthers } from './style.others';
 import { flexStyles } from './flex';
 
 export const noop = (..._: any[]): any => {};
@@ -21,6 +22,7 @@ const getStyle =
 const styles = {
   ...StyleBorder,
   ...StyleColors,
+  ...StyleOthers,
   ...StyleGrid,
   ...StyleSize,
   ...textStyles,
