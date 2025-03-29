@@ -9,8 +9,7 @@ import { StyleGrid } from './style.grid';
 import { StyleBorder } from './style.border';
 import { StyleOthers } from './style.others';
 import { flexStyles } from './flex';
-
-export const noop = (..._: any[]): any => {};
+import { noop } from '@utils/noop.util';
 
 const getStyle =
   ({ dependFn = noop, ...props }: any) =>
