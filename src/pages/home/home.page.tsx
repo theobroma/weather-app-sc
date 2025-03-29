@@ -1,5 +1,5 @@
-import { CurrentWeather } from '@components/current-weather/current-weather';
-import { Forecast } from '@components/forecast/forecast';
+import { CurrentWeather } from '@pages/home/current-weather/current-weather';
+import { Forecast } from '@pages/home/forecast/forecast';
 
 const HomePage = () => (
   <>
