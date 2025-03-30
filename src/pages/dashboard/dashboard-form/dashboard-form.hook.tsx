@@ -5,7 +5,9 @@ export const useDashboardForm = () => {
 
   return {
     initialValues: {
+      checkboxDefault: false,
       checkboxDisabledChecked: true,
+      checkboxDisabled: false,
     },
     handleSubmit,
   };

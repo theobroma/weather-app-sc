@@ -21,6 +21,9 @@ const DashboardForm = () => {
             <CheckboxField name="checkboxDefault" title="Default" />
             <CheckboxField name="checkboxDisabledChecked" title="Disabled" disabled />
             <CheckboxField name="checkboxDisabled" title="Disabled" disabled />
+            <button className="Button" type="submit">
+              Submit
+            </button>
           </FormRow>
         </Form>
       </Formik>
