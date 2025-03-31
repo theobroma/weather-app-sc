@@ -20,4 +20,10 @@ export const textTypography = {
     fontSize: 14,
     lineHeight: 1.16,
   },
+  ButtonBig: {
+    ...fontFamily,
+    ...letterSpacing,
+    fontSize: 18,
+    lineHeight: 1,
+  },
 };

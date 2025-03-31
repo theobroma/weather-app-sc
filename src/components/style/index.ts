@@ -1,4 +1,5 @@
 import { combine } from 'flexible-chain';
+import styleToCss from 'style-object-to-css-string';
 
 import { textStyles } from './text';
 import { CSSProperties } from 'react';
@@ -53,7 +54,7 @@ const otherTags = {
   ImageStyled: (props: CSSProperties) => styled(otherTags.Image(props)),
   Label: (props: CSSProperties) => styled.label(getStyle(props)),
 
-  // Apply: (props: CSSProperties) => styleToCss(props),
+  Apply: (props: CSSProperties) => styleToCss(props),
 
   ...textTags,
 };
