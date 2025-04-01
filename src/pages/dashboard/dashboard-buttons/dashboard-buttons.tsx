@@ -8,20 +8,39 @@ import { IconEnum } from '@enums/icon.enum';
 import { ButtonAccent } from '@/atoms/button/button-accent';
 import { ButtonPrimary } from '@/atoms/button/button-primary';
 import { ButtonTransparent } from '@/atoms/button/button-transparent';
-import { FormRow } from '@components/form/common.styles';
+import { SectionWrapper, VerticalStack, HorizontalStack } from '@pages/dashboard/dashboard.page.styles';
 
 export const DashboardButtons = () => (
-  <FormRow sizes={8}>
-    <ButtonAccent>ButtonAccent</ButtonAccent>
-    <ButtonAdditional>ButtonAdditional</ButtonAdditional>
-    <ButtonPrimary>ButtonPrimary</ButtonPrimary>
-    <ButtonSecondary>
-      ButtonSecondary
-      <IconWrapper>
-        <Icon size={IconSizeEnum.L} name={IconEnum.Trash} />
-      </IconWrapper>
-    </ButtonSecondary>
-    <ButtonTertiary>ButtonTertiary</ButtonTertiary>
-    <ButtonTransparent>ButtonTransparent</ButtonTransparent>
-  </FormRow>
+  <SectionWrapper>
+    <VerticalStack>
+      <HorizontalStack>
+        <ButtonAccent>
+          ButtonAccent
+          <IconWrapper>
+            <Icon size={IconSizeEnum.L} name={IconEnum.Trash} />
+          </IconWrapper>
+        </ButtonAccent>
+        <ButtonAdditional>ButtonAdditional</ButtonAdditional>
+        <ButtonPrimary>ButtonPrimary</ButtonPrimary>
+      </HorizontalStack>
+      <HorizontalStack>
+        <ButtonSecondary isFull>ButtonSecondary</ButtonSecondary>
+        <ButtonTertiary isFull>ButtonTertiary</ButtonTertiary>
+        <ButtonTransparent>ButtonTransparent</ButtonTransparent>
+      </HorizontalStack>
+      <HorizontalStack>
+        <ButtonAccent isSmall>
+          ButtonAccent
+          <IconWrapper>
+            <Icon size={IconSizeEnum.L} name={IconEnum.Trash} />
+          </IconWrapper>
+        </ButtonAccent>
+        <ButtonAdditional isSmall>ButtonAdditional</ButtonAdditional>
+        <ButtonPrimary isSmall>ButtonPrimary</ButtonPrimary>
+        <ButtonSecondary isSmall>ButtonSecondary</ButtonSecondary>
+        <ButtonTertiary isSmall>ButtonTertiary</ButtonTertiary>
+        <ButtonTransparent isSmall>ButtonTransparent</ButtonTransparent>
+      </HorizontalStack>
+    </VerticalStack>
+  </SectionWrapper>
 );

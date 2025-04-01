@@ -3,12 +3,13 @@ import { Formik, Form } from 'formik';
 import { CheckboxField } from '@components/checkbox/checkbox-field/checkbox-field';
 import { FormRow } from '@components/form/common.styles';
 import { useDashboardForm } from './dashboard-form.hook';
+import { SectionWrapper } from '@pages/dashboard/dashboard.page.styles';
 
 const DashboardForm = () => {
   const { initialValues, handleSubmit } = useDashboardForm();
 
   return (
-    <>
+    <SectionWrapper>
       <Formik
         initialValues={initialValues}
         // validationSchema={validationSchema}
@@ -27,7 +28,7 @@ const DashboardForm = () => {
           </FormRow>
         </Form>
       </Formik>
-    </>
+    </SectionWrapper>
   );
 };
 
