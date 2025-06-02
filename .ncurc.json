@@ -2,7 +2,6 @@
   "reject": [
     "@types/node",
     "eslint",
-    "vite",
     "react",
     "react-dom",
     "@types/react",
