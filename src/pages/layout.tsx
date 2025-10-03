@@ -2,7 +2,7 @@ import { Menu, MenuItem, Sidebar } from 'react-pro-sidebar';
 import { NavLink, Outlet } from 'react-router-dom';
 
 export const Layout = () => (
-  <div style={{ display: 'flex', height: '100%', minHeight: '400px' }}>
+  <div style={{ display: 'flex', height: '100%', minHeight: '400px', backgroundColor: '#f0f0f0' }}>
     <Sidebar>
       <Menu>
         <MenuItem component={<NavLink to="/"></NavLink>}>Home</MenuItem>

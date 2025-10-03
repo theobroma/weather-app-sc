@@ -1,8 +1,18 @@
 import { ForecastDayType } from '@api/forecast/types/z.forecast';
 
-import { Day, ForecastDayWrapper } from './forecast-day.styles';
+import {
+  SunriseText,
+  SunsetText,
+  ConditionImage,
+  ConditionText,
+  DateLabel,
+  DayLabel,
+  ForecastDayWrapper,
+  TemperatureText,
+} from './forecast-day.styles';
 
 const weekdayOptions = { weekday: 'long' } as const;
+
 const dateOptions = {
   year: 'numeric',
   month: 'long',
@@ -22,11 +32,15 @@ export const ForecastDay = ({ forecastDay }: ForecastDayProps) => {
 
   return (
     <ForecastDayWrapper>
-      <Day>{weekDayString}</Day>
-      <span>{dateString}</span>
-      <span>{astro.sunrise}</span>
-      <span>{astro.sunset}</span>
-      <img src={day.condition.icon} alt="icon" />
+      <DayLabel>{weekDayString}</DayLabel>
+      <DateLabel>{dateString}</DateLabel>
+      <ConditionImage src={day.condition.icon} alt="icon" />
+      <ConditionText>{day.condition.text}</ConditionText>
+      <TemperatureText>
+        {day.mintempC}-{day.maxtempC}&#176;C
+      </TemperatureText>
+      <SunriseText>{astro.sunrise}</SunriseText>
+      <SunsetText>{astro.sunset}</SunsetText>
     </ForecastDayWrapper>
   );
 };
