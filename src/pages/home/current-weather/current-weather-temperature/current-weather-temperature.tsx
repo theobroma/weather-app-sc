@@ -1,4 +1,5 @@
 import { CurrentWeatherType } from '@api/forecast/types/z.current';
+import { ConditionText, ConditionImage, TemperatureText } from './current-weather-temperature.styles';
 
 interface CurrentWeatherTemperatureProps {
   current: CurrentWeatherType;
@@ -10,12 +11,10 @@ export const CurrentWeatherTemperature = ({ current }: CurrentWeatherTemperature
   return (
     <div>
       <div>
-        <span>{tempC}&#176;C</span>
+        <ConditionImage src={condition.icon} width="150" alt="condition" />
+        <TemperatureText>{tempC}&#176;C</TemperatureText>
       </div>
-      <div>
-        <img src={condition.icon} width="150" alt="condition" />
-        <span> {condition.text}</span>
-      </div>
+      <ConditionText>{condition.text}</ConditionText>
     </div>
   );
 };
