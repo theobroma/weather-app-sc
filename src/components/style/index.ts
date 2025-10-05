@@ -1,8 +1,9 @@
 import { CSSProperties } from 'react';
-import { noop } from '@/utils/noop.util';
 import { combine } from 'flexible-chain';
 import styleToCss from 'style-object-to-css-string';
 import styled from 'styled-components';
+
+import { noop } from '@/utils/noop.util';
 
 import { flexStyles } from './flex';
 import { StyleBorder } from './style.border';

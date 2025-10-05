@@ -1,7 +1,8 @@
+import { Form, Formik } from 'formik';
+
 import { CheckboxField } from '@/components/checkbox/checkbox-field/checkbox-field';
 import { FormRow } from '@/components/form/common.styles';
 import { SectionWrapper } from '@/pages/dashboard/dashboard.page.styles';
-import { Form, Formik } from 'formik';
 
 import { useDashboardForm } from './dashboard-form.hook';
 

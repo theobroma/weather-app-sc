@@ -1,6 +1,3 @@
-import { IconEnum } from '@/enums/icon.enum';
-import { HorizontalStack, SectionWrapper, VerticalStack } from '@/pages/dashboard/dashboard.page.styles';
-
 import { ButtonAccent } from '@/atoms/button/button-accent';
 import { ButtonAdditional } from '@/atoms/button/button-additional';
 import { ButtonPrimary } from '@/atoms/button/button-primary';
@@ -10,6 +7,8 @@ import { ButtonTransparent } from '@/atoms/button/button-transparent';
 import { Icon } from '@/atoms/icon/icon';
 import { IconWrapper } from '@/atoms/icon/icon-wrapper.styles';
 import { IconSizeEnum } from '@/atoms/icon/icon.enum';
+import { IconEnum } from '@/enums/icon.enum';
+import { HorizontalStack, SectionWrapper, VerticalStack } from '@/pages/dashboard/dashboard.page.styles';
 
 export const DashboardButtons = () => (
   <SectionWrapper>

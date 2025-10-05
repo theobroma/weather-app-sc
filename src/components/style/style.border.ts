@@ -1,6 +1,7 @@
+import { Property } from 'csstype';
+
 import { ColorEnum } from '@/enums/color.enum';
 import { isExist } from '@/utils/is-data.util';
-import { Property } from 'csstype';
 
 interface DirectionProps {
   hasTopBorder: boolean;
