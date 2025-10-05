@@ -1,4 +1,4 @@
-import { connectionClient } from '@api/connection';
+import { connectionClient } from '@/api/connection';
 
 import { forecastResponseSchema } from './forecast.interface';
 

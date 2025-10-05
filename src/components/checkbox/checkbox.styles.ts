@@ -1,7 +1,7 @@
-import { FieldErrorWrapper } from '@components/field-error/field-error.styles';
-import { Style } from '@components/style';
-import { getSize } from '@components/style/style.util';
-import { ColorEnum } from '@enums/color.enum';
+import { FieldErrorWrapper } from '@/components/field-error/field-error.styles';
+import { Style } from '@/components/style';
+import { getSize } from '@/components/style/style.util';
+import { ColorEnum } from '@/enums/color.enum';
 import styled, { css } from 'styled-components';
 
 interface CheckBoxProps {

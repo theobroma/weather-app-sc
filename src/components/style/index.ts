@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react';
-import { noop } from '@utils/noop.util';
+import { noop } from '@/utils/noop.util';
 import { combine } from 'flexible-chain';
 import styleToCss from 'style-object-to-css-string';
 import styled from 'styled-components';

@@ -1,7 +1,7 @@
-import { Checkbox } from '@components/checkbox/checkbox';
-import { CheckBoxProps } from '@components/checkbox/checkbox.interface';
-import { ErrorWrapper } from '@components/checkbox/checkbox.styles';
-import { FieldError } from '@components/field-error/field-error';
+import { Checkbox } from '@/components/checkbox/checkbox';
+import { CheckBoxProps } from '@/components/checkbox/checkbox.interface';
+import { ErrorWrapper } from '@/components/checkbox/checkbox.styles';
+import { FieldError } from '@/components/field-error/field-error';
 import { useField } from 'formik';
 
 import { CheckboxFieldWrapper } from './checkbox-field.styles';

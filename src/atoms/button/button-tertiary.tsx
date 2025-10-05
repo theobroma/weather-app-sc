@@ -1,5 +1,5 @@
-import { ButtonProps } from '@atoms/button/button.props';
-import { ButtonTertiaryStyles } from '@atoms/button/button.style';
+import { ButtonProps } from '@/atoms/button/button.props';
+import { ButtonTertiaryStyles } from '@/atoms/button/button.style';
 
 import { Button } from './button';
 

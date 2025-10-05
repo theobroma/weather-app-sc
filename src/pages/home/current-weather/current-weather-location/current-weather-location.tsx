@@ -1,4 +1,4 @@
-import { LocationType } from '@api/forecast/types/z.location';
+import { LocationType } from '@/api/forecast/types/z.location';
 
 import { Location, LocationWrapper } from './current-weather-location.styles';
 

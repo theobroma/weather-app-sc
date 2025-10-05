@@ -1,4 +1,4 @@
-import { ColorEnum } from '@enums/color.enum';
+import { ColorEnum } from '@/enums/color.enum';
 
 type ColorType = {
   [key in keyof typeof ColorEnum & string as `${key}Bg`]: {

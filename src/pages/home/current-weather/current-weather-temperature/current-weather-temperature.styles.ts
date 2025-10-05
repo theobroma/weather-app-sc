@@ -1,4 +1,4 @@
-import { Style } from '@components/style';
+import { Style } from '@/components/style';
 
 export const ConditionText = Style.Grey500.SpanStyled`
     font-size: 30px;

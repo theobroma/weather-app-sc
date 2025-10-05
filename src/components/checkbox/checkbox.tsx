@@ -1,9 +1,9 @@
 import { ChangeEvent, PropsWithChildren } from 'react';
-import { Icon } from '@atoms/icon/icon';
-import { IconSizeEnum } from '@atoms/icon/icon.enum';
-import { ColorEnum } from '@enums/color.enum';
-import { IconEnum } from '@enums/icon.enum';
-import { isExist, isString } from '@utils/is-data.util';
+import { Icon } from '@/atoms/icon/icon';
+import { IconSizeEnum } from '@/atoms/icon/icon.enum';
+import { ColorEnum } from '@/enums/color.enum';
+import { IconEnum } from '@/enums/icon.enum';
+import { isExist, isString } from '@/utils/is-data.util';
 
 import { CheckBoxProps } from './checkbox.interface';
 import {

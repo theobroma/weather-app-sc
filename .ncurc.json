@@ -1,3 +1,3 @@
 {
-  "reject": ["@types/node", "eslint", "react", "react-dom", "@types/react", "@types/react-dom", "react-router-dom"]
+  "reject": ["@types/node", "react", "react-dom", "@types/react", "@types/react-dom", "react-router-dom"]
 }

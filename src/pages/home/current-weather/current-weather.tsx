@@ -1,7 +1,7 @@
-import { loadForecast } from '@api/forecast/forecast';
-import { QueryEnum } from '@enums/query.enum';
+import { loadForecast } from '@/api/forecast/forecast';
+import { QueryEnum } from '@/enums/query.enum';
 import { useQuery } from '@tanstack/react-query';
-import { isExist } from '@utils/is-data.util';
+import { isExist } from '@/utils/is-data.util';
 
 import { CurrentWeatherLocation } from './current-weather-location/current-weather-location';
 import { CurrentWeatherTemperature } from './current-weather-temperature/current-weather-temperature';

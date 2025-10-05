@@ -1,6 +1,6 @@
 import { LegacyRef, memo, useRef } from 'react';
-import { IconSizeEnum } from '@atoms/icon/icon.enum';
-import { isString } from '@utils/is-data.util';
+import { IconSizeEnum } from '@/atoms/icon/icon.enum';
+import { isString } from '@/utils/is-data.util';
 
 import { IconProps } from './icon.interface';
 import { iconOptions } from './icon.options';

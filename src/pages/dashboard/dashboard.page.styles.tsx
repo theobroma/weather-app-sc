@@ -1,5 +1,5 @@
-import { Style } from '@components/style';
-import { ColorEnum } from '@enums/color.enum';
+import { Style } from '@/components/style';
+import { ColorEnum } from '@/enums/color.enum';
 
 export const SectionWrapper = Style.Grey50Bg.Radius(16).Padding(16).MarginTop(24).Div;
 export const DashedPrimaryWrapper = Style.Border(ColorEnum.Primary500, { width: 2, style: 'dashed' })

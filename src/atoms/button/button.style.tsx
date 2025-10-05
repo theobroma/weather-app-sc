@@ -1,8 +1,8 @@
-import { ButtonProps } from '@atoms/button/button.props';
-import { Style } from '@components/style';
-import { getSize } from '@components/style/style.util';
-import { textTypography } from '@components/style/text/text.typography';
-import { ColorEnum } from '@enums/color.enum';
+import { ButtonProps } from '@/atoms/button/button.props';
+import { Style } from '@/components/style';
+import { getSize } from '@/components/style/style.util';
+import { textTypography } from '@/components/style/text/text.typography';
+import { ColorEnum } from '@/enums/color.enum';
 import styled, { css } from 'styled-components';
 
 const smallButtonStyles = css`

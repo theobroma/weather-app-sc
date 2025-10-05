@@ -1,4 +1,4 @@
-import { Style } from '@components/style';
+import { Style } from '@/components/style';
 
 export const DayLabel = Style.Body2.Grey300.MarginTop(8).Span;
 export const DateLabel = Style.Body1.Grey300.MarginTop(8).Span;

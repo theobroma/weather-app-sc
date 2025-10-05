@@ -1,3 +1,3 @@
-import { Style } from '@components/style';
+import { Style } from '@/components/style';
 
 export const CheckboxFieldWrapper = Style.Div;

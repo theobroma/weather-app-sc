@@ -1,4 +1,4 @@
-import { FormRow } from '@components/form/common.styles';
+import { FormRow } from '@/components/form/common.styles';
 
 import { Description, PrimaryBlock, SecondaryBlock, SubTitle, Title } from './grid-example.styles';
 

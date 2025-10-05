@@ -1,6 +1,6 @@
 import { useField } from 'formik';
 
-import { isExist } from '@utils/is-data.util';
+import { isExist } from '@/utils/is-data.util';
 
 import { LabelError } from './field-error.styles';
 

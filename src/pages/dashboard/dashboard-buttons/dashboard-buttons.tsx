@@ -1,5 +1,5 @@
-import { IconEnum } from '@enums/icon.enum';
-import { HorizontalStack, SectionWrapper, VerticalStack } from '@pages/dashboard/dashboard.page.styles';
+import { IconEnum } from '@/enums/icon.enum';
+import { HorizontalStack, SectionWrapper, VerticalStack } from '@/pages/dashboard/dashboard.page.styles';
 
 import { ButtonAccent } from '@/atoms/button/button-accent';
 import { ButtonAdditional } from '@/atoms/button/button-additional';

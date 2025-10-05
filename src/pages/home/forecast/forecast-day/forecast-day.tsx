@@ -1,4 +1,4 @@
-import { ForecastDayType } from '@api/forecast/types/z.forecast';
+import { ForecastDayType } from '@/api/forecast/types/z.forecast';
 
 import {
   ConditionImage,
