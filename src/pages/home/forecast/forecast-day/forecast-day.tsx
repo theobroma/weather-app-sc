@@ -1,13 +1,13 @@
 import { ForecastDayType } from '@api/forecast/types/z.forecast';
 
 import {
-  SunriseText,
-  SunsetText,
   ConditionImage,
   ConditionText,
   DateLabel,
   DayLabel,
   ForecastDayWrapper,
+  SunriseText,
+  SunsetText,
   TemperatureText,
 } from './forecast-day.styles';
 

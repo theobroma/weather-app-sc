@@ -1,5 +1,4 @@
 import { LegacyRef, memo, useRef } from 'react';
-
 import { IconSizeEnum } from '@atoms/icon/icon.enum';
 import { isString } from '@utils/is-data.util';
 

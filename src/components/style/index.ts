@@ -1,16 +1,16 @@
+import { CSSProperties } from 'react';
+import { noop } from '@utils/noop.util';
 import { combine } from 'flexible-chain';
 import styleToCss from 'style-object-to-css-string';
-
-import { textStyles } from './text';
-import { CSSProperties } from 'react';
 import styled from 'styled-components';
-import { StyleSize } from './style.size';
+
+import { flexStyles } from './flex';
+import { StyleBorder } from './style.border';
 import { StyleColors } from './style.colors';
 import { StyleGrid } from './style.grid';
-import { StyleBorder } from './style.border';
 import { StyleOthers } from './style.others';
-import { flexStyles } from './flex';
-import { noop } from '@utils/noop.util';
+import { StyleSize } from './style.size';
+import { textStyles } from './text';
 
 const getStyle =
   ({ dependFn = noop, ...props }: any) =>

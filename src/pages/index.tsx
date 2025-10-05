@@ -1,6 +1,7 @@
-import pMinDelay from 'p-min-delay';
 import { lazy } from 'react';
+import pMinDelay from 'p-min-delay';
 import { createBrowserRouter } from 'react-router-dom';
+
 import { Layout } from './layout';
 
 const MIN_LAZY_DELAY = 300;

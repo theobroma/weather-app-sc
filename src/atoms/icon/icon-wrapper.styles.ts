@@ -1,7 +1,6 @@
-import { css } from 'styled-components';
-
 import { Style } from '@components/style';
 import { getSize } from '@components/style/style.util';
+import { css } from 'styled-components';
 
 interface IconWrapperProps {
   isLeft?: boolean;

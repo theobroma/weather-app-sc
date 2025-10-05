@@ -1,14 +1,15 @@
-import { ButtonTertiary } from '@/atoms/button/button-tertiary';
-import { ButtonAdditional } from '@/atoms/button/button-additional';
-import { ButtonSecondary } from '@/atoms/button/button-secondary';
-import { IconWrapper } from '@/atoms/icon/icon-wrapper.styles';
-import { Icon } from '@/atoms/icon/icon';
-import { IconSizeEnum } from '@/atoms/icon/icon.enum';
 import { IconEnum } from '@enums/icon.enum';
+import { HorizontalStack, SectionWrapper, VerticalStack } from '@pages/dashboard/dashboard.page.styles';
+
 import { ButtonAccent } from '@/atoms/button/button-accent';
+import { ButtonAdditional } from '@/atoms/button/button-additional';
 import { ButtonPrimary } from '@/atoms/button/button-primary';
+import { ButtonSecondary } from '@/atoms/button/button-secondary';
+import { ButtonTertiary } from '@/atoms/button/button-tertiary';
 import { ButtonTransparent } from '@/atoms/button/button-transparent';
-import { SectionWrapper, VerticalStack, HorizontalStack } from '@pages/dashboard/dashboard.page.styles';
+import { Icon } from '@/atoms/icon/icon';
+import { IconWrapper } from '@/atoms/icon/icon-wrapper.styles';
+import { IconSizeEnum } from '@/atoms/icon/icon.enum';
 
 export const DashboardButtons = () => (
   <SectionWrapper>

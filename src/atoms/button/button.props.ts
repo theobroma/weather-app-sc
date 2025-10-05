@@ -1,8 +1,9 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { IStyledComponent } from 'styled-components';
 
-import { ButtonTypeEnum } from './button-type.enum';
 import { ClickEventType } from '@/types/click-event.type';
+
+import { ButtonTypeEnum } from './button-type.enum';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: ClickEventType;

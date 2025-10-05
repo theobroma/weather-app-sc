@@ -1,5 +1,6 @@
 import { FormRow } from '@components/form/common.styles';
-import { Title, SubTitle, Description, PrimaryBlock, SecondaryBlock } from './grid-example.styles';
+
+import { Description, PrimaryBlock, SecondaryBlock, SubTitle, Title } from './grid-example.styles';
 
 const GridExamplePage = () => (
   <div>

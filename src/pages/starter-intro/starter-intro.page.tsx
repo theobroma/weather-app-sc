@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaBeer } from 'react-icons/fa';
 
 import './starter-intro.css';
+
 import reactLogo from '@/assets/react.svg';
 
 const StarterIntroPage = () => {

@@ -1,5 +1,6 @@
 import { CurrentWeatherType } from '@api/forecast/types/z.current';
-import { ConditionText, ConditionImage, TemperatureText } from './current-weather-temperature.styles';
+
+import { ConditionImage, ConditionText, TemperatureText } from './current-weather-temperature.styles';
 
 interface CurrentWeatherTemperatureProps {
   current: CurrentWeatherType;
