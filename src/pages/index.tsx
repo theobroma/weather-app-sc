@@ -6,7 +6,7 @@ import { Layout } from './layout';
 
 const MIN_LAZY_DELAY = 300;
 
-const HomePage = lazy(() => pMinDelay(import('./home/home.page'), MIN_LAZY_DELAY));
+const WeatherPage = lazy(() => pMinDelay(import('./weather/weather.page'), MIN_LAZY_DELAY));
 const StarterIntroPage = lazy(() => pMinDelay(import('./starter-intro/starter-intro.page'), MIN_LAZY_DELAY));
 const GridExamplePage = lazy(() => pMinDelay(import('./grid-example/grid-example.page'), MIN_LAZY_DELAY));
 const DashboardPage = lazy(() => pMinDelay(import('./dashboard/dashboard.page'), MIN_LAZY_DELAY));
@@ -18,15 +18,11 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <WeatherPage />,
       },
       {
         path: '/starter',
         element: <StarterIntroPage />,
-      },
-      {
-        path: '/grid',
-        element: <GridExamplePage />,
       },
       {
         path: '/grid',
