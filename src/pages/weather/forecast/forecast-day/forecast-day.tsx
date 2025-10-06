@@ -1,13 +1,17 @@
+import { Moon, Sun } from 'lucide-react';
+
 import { ForecastDayType } from '@/api/forecast/types/z.forecast';
 
 import {
+  AstroIconWrapper,
+  AstroText,
   ConditionImage,
   ConditionText,
   DateLabel,
   DayLabel,
   ForecastDayWrapper,
-  SunriseText,
-  SunsetText,
+  SunriseWrapper,
+  SunsetWrapper,
   TemperatureText,
 } from './forecast-day.styles';
 
@@ -39,8 +43,18 @@ export const ForecastDay = ({ forecastDay }: ForecastDayProps) => {
       <TemperatureText>
         {day.mintempC}-{day.maxtempC}&#176;C
       </TemperatureText>
-      <SunriseText>{astro.sunrise}</SunriseText>
-      <SunsetText>{astro.sunset}</SunsetText>
+      <SunriseWrapper>
+        <AstroIconWrapper>
+          <Sun />
+        </AstroIconWrapper>
+        <AstroText> {astro.sunrise}</AstroText>
+      </SunriseWrapper>
+      <SunsetWrapper>
+        <AstroIconWrapper>
+          <Moon />
+        </AstroIconWrapper>
+        <AstroText> {astro.sunrise}</AstroText>
+      </SunsetWrapper>
     </ForecastDayWrapper>
   );
 };
