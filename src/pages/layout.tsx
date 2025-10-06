@@ -5,7 +5,7 @@ export const Layout = () => (
   <div style={{ display: 'flex', height: '100%', minHeight: '400px', backgroundColor: '#f0f0f0' }}>
     <Sidebar>
       <Menu>
-        <MenuItem component={<NavLink to="/"></NavLink>}>Home</MenuItem>
+        <MenuItem component={<NavLink to="/"></NavLink>}>Weather</MenuItem>
         <MenuItem component={<NavLink to="/grid"></NavLink>}> Grid</MenuItem>
         <MenuItem component={<NavLink to="/starter"></NavLink>}>Starter</MenuItem>
         <MenuItem component={<NavLink to="/dashboard"></NavLink>}>Dashboard</MenuItem>
