@@ -1,3 +1,5 @@
+import { Text, Title } from './current-weather-conditions-item.styles';
+
 interface CurrentWeatherConditionsItemProps {
   title: string;
   iconNode?: any;
@@ -6,8 +8,9 @@ interface CurrentWeatherConditionsItemProps {
 
 export const CurrentWeatherConditionsItem = ({ title, iconNode, children }: CurrentWeatherConditionsItemProps) => (
   <div>
-    {title}
-    {iconNode && iconNode}
-    {children}
+    <Title>
+      {title} {iconNode && iconNode}
+    </Title>
+    <Text>{children}</Text>
   </div>
 );

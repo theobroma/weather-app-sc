@@ -26,7 +26,7 @@ export const CurrentWeather = () => {
           <CurrentWeatherLocation location={data.location} />
           <FormRow sizes={2}>
             <CurrentWeatherTemperature current={data.current} />
-            <CurrentWeatherConditions />
+            <CurrentWeatherConditions current={data.current} />
           </FormRow>
         </>
       )}

@@ -1,23 +1,33 @@
 import { CalendarDays, CloudHail, Thermometer, Tornado, Wind } from 'lucide-react';
 
+import { CurrentWeatherType } from '@/api/forecast/types/z.current';
+
 import { CurrentWeatherConditionsItem } from './current-weather-conditions-item/current-weather-conditions-item';
 
-export const CurrentWeatherConditions = () => (
-  <div>
-    <CurrentWeatherConditionsItem title="Today" iconNode={<CalendarDays />}>
-      1
-    </CurrentWeatherConditionsItem>
-    <CurrentWeatherConditionsItem title="Feels Like" iconNode={<Thermometer />}>
-      2
-    </CurrentWeatherConditionsItem>
-    <CurrentWeatherConditionsItem title="Humidity" iconNode={<CloudHail />}>
-      3
-    </CurrentWeatherConditionsItem>
-    <CurrentWeatherConditionsItem title="Wind" iconNode={<Wind />}>
-      4
-    </CurrentWeatherConditionsItem>
-    <CurrentWeatherConditionsItem title="Gust" iconNode={<Tornado />}>
-      5
-    </CurrentWeatherConditionsItem>
-  </div>
-);
+interface CurrentWeatherConditionsProps {
+  current: CurrentWeatherType;
+}
+
+export const CurrentWeatherConditions = ({ current }: CurrentWeatherConditionsProps) => {
+  const { lastUpdated, windKph, humidity, gustKph, feelslikeC, windDir } = current;
+
+  return (
+    <div>
+      <CurrentWeatherConditionsItem title="Today" iconNode={<CalendarDays />}>
+        {lastUpdated}
+      </CurrentWeatherConditionsItem>
+      <CurrentWeatherConditionsItem title="Feels Like" iconNode={<Thermometer />}>
+        {feelslikeC}°C
+      </CurrentWeatherConditionsItem>
+      <CurrentWeatherConditionsItem title="Humidity" iconNode={<CloudHail />}>
+        {humidity}%
+      </CurrentWeatherConditionsItem>
+      <CurrentWeatherConditionsItem title="Wind" iconNode={<Wind />}>
+        {windKph}km/h ({windDir})
+      </CurrentWeatherConditionsItem>
+      <CurrentWeatherConditionsItem title="Gust" iconNode={<Tornado />}>
+        {gustKph}km/h
+      </CurrentWeatherConditionsItem>
+    </div>
+  );
+};
