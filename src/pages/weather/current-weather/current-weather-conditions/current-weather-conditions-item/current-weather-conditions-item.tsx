@@ -1,4 +1,10 @@
-import { Text, Title } from './current-weather-conditions-item.styles';
+import {
+  CurrentWeatherConditionsItemWrapper,
+  IconWrapper,
+  LabelWrapper,
+  Text,
+  Title,
+} from './current-weather-conditions-item.styles';
 
 interface CurrentWeatherConditionsItemProps {
   title: string;
@@ -7,10 +13,11 @@ interface CurrentWeatherConditionsItemProps {
 }
 
 export const CurrentWeatherConditionsItem = ({ title, iconNode, children }: CurrentWeatherConditionsItemProps) => (
-  <div>
-    <Title>
-      {title} {iconNode && iconNode}
-    </Title>
+  <CurrentWeatherConditionsItemWrapper>
+    <LabelWrapper>
+      <IconWrapper>{iconNode && iconNode}</IconWrapper>
+      <Title>{title}:</Title>
+    </LabelWrapper>
     <Text>{children}</Text>
-  </div>
+  </CurrentWeatherConditionsItemWrapper>
 );

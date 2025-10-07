@@ -23,10 +23,10 @@ export const CurrentWeatherConditions = ({ current }: CurrentWeatherConditionsPr
         {humidity}%
       </CurrentWeatherConditionsItem>
       <CurrentWeatherConditionsItem title="Wind" iconNode={<Wind />}>
-        {windKph}km/h ({windDir})
+        {windKph} km/h ({windDir})
       </CurrentWeatherConditionsItem>
       <CurrentWeatherConditionsItem title="Gust" iconNode={<Tornado />}>
-        {gustKph}km/h
+        {gustKph} km/h
       </CurrentWeatherConditionsItem>
     </div>
   );
