@@ -6,6 +6,7 @@ import { QueryEnum } from '@/enums/query.enum';
 import { isExist } from '@/utils/is-data.util';
 
 import { ForecastDay } from './forecast-day/forecast-day';
+import { ForecastTitle, ForecastTitleWrapper, ForecastWrapper } from './forecast.styles';
 
 export const Forecast = () => {
   const { data, error, isError } = useQuery({
@@ -18,14 +19,19 @@ export const Forecast = () => {
   }
 
   return (
-    <>
+    <ForecastWrapper>
       {isExist(data) && (
-        <FormRow sizes={3}>
-          {data?.forecast.forecastday.map((forecastDay, index) => (
-            <ForecastDay key={index} forecastDay={forecastDay} />
-          ))}
-        </FormRow>
+        <>
+          <ForecastTitleWrapper>
+            <ForecastTitle>Forecast</ForecastTitle>
+          </ForecastTitleWrapper>
+          <FormRow sizes={3}>
+            {data?.forecast.forecastday.map((forecastDay, index) => (
+              <ForecastDay key={index} forecastDay={forecastDay} />
+            ))}
+          </FormRow>
+        </>
       )}
-    </>
+    </ForecastWrapper>
   );
 };

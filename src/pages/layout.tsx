@@ -4,7 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { ColorEnum } from '@/enums/color.enum';
 
 export const Layout = () => (
-  <div style={{ display: 'flex', height: '100%', minHeight: '400px', backgroundColor: '#f0f0f0' }}>
+  <div style={{ display: 'flex', height: '100%', minHeight: '400px', backgroundColor: '#fff' }}>
     <Sidebar
       rootStyles={{
         [`.${sidebarClasses.container}`]: {

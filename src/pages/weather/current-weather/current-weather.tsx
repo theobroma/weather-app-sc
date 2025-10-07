@@ -8,6 +8,7 @@ import { isExist } from '@/utils/is-data.util';
 import { CurrentWeatherConditions } from './current-weather-conditions/current-weather-conditions';
 import { CurrentWeatherLocation } from './current-weather-location/current-weather-location';
 import { CurrentWeatherTemperature } from './current-weather-temperature/current-weather-temperature';
+import { CurrentWeatherWrapper } from './current-weather.styles';
 
 export const CurrentWeather = () => {
   const { data, isPending } = useQuery({
@@ -20,7 +21,7 @@ export const CurrentWeather = () => {
   }
 
   return (
-    <>
+    <CurrentWeatherWrapper>
       {isExist(data) && (
         <>
           <CurrentWeatherLocation location={data.location} />
@@ -30,6 +31,6 @@ export const CurrentWeather = () => {
           </FormRow>
         </>
       )}
-    </>
+    </CurrentWeatherWrapper>
   );
 };
