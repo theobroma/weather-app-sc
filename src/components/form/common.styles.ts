@@ -13,3 +13,5 @@ const getGridTemplateColumns = ({ sizes }: FormRowProps) =>
 export const FormRow = Style.Grid.GridColumnGap(16).MarginTop(FORM_ROW_MARGIN_TOP).DivStyled<FormRowProps>`
     grid-template-columns: ${getGridTemplateColumns};
 `;
+
+export const EmptyWrapper = Style.Div;

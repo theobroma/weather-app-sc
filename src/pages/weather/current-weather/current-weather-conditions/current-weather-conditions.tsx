@@ -1,6 +1,7 @@
 import { CalendarDays, CloudHail, Thermometer, Tornado, Wind } from 'lucide-react';
 
 import { CurrentWeatherType } from '@/api/forecast/types/z.current';
+import { EmptyWrapper } from '@/components/form/common.styles';
 
 import { CurrentWeatherConditionsItem } from './current-weather-conditions-item/current-weather-conditions-item';
 
@@ -12,7 +13,7 @@ export const CurrentWeatherConditions = ({ current }: CurrentWeatherConditionsPr
   const { lastUpdated, windKph, humidity, gustKph, feelslikeC, windDir } = current;
 
   return (
-    <div>
+    <EmptyWrapper>
       <CurrentWeatherConditionsItem title="Today" iconNode={<CalendarDays />}>
         {lastUpdated}
       </CurrentWeatherConditionsItem>
@@ -28,6 +29,6 @@ export const CurrentWeatherConditions = ({ current }: CurrentWeatherConditionsPr
       <CurrentWeatherConditionsItem title="Gust" iconNode={<Tornado />}>
         {gustKph} km/h
       </CurrentWeatherConditionsItem>
-    </div>
+    </EmptyWrapper>
   );
 };
